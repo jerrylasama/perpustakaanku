@@ -1,4 +1,4 @@
-![CircleCI](https://img.shields.io/circleci/build/github/jerrylasama/perpustakaanku/main)
+<img alt="CircleCI" src="https://img.shields.io/circleci/build/github/jerrylasama/perpustakaanku/main?token=7ec0ded0d34af77c35df84c5a6a03fd751940f0c">
 
 
 # Perpustakaanku
