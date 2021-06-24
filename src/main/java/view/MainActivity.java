@@ -79,7 +79,8 @@ public class MainActivity {
             System.out.flush();
             System.out.println("====\tAdmin Zone\t====");
             System.out.println("1. Borrow a Book\n2. Return a Book");
-            System.out.println("3. Borrowing List\n4. Reset Password\n5. Log out");
+            System.out.println("3. Borrowing List\n4. Reset Password\n5. Export Transactions");
+            System.out.println("6. Log out");
             System.out.print("Pilihan: ");
             choice = scanner.nextInt();
 
@@ -138,6 +139,13 @@ public class MainActivity {
                     System.out.println("Password updated!");
                     break;
                 case 5:
+                    System.out.println("Insert target location: ");
+                    scanner.nextLine();
+                    String fileLocation = scanner.nextLine();
+                    transaction.exportTransactions(fileLocation);
+                    System.out.println("Exported!");
+                    break;
+                case 6:
                     System.out.println("Exiting...");
                     logOut = true;
                     break;
