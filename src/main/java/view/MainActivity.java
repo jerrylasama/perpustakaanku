@@ -13,6 +13,7 @@ public class MainActivity {
 
     public static void main(String[] args) throws SQLException {
         User user = new User();
+        Scanner scanner = new Scanner(System.in);
         String username;
         String password;
         int choice;
@@ -23,8 +24,6 @@ public class MainActivity {
 
             switch (choice) {
                 case 1:
-                    Scanner scanner = new Scanner(System.in);
-
                     System.out.print("Username: ");
                     username = scanner.nextLine();
                     System.out.print("Password: ");
@@ -40,6 +39,13 @@ public class MainActivity {
                     register();
                     break;
                 case 3:
+                    System.out.println("Username to delete: ");
+                    scanner.nextLine();
+                    String usernameToDelete = scanner.nextLine();
+                    user.delete(usernameToDelete);
+                    System.out.printf("%s was deleted from the system!\n", usernameToDelete);
+                    break;
+                case 4:
                     System.out.println("Exiting...");
                     exit = true;
                     break;
@@ -55,7 +61,7 @@ public class MainActivity {
         System.out.print("\033[H\033[2J");
         System.out.flush();
         System.out.println("====\tLibrary in Terminal\t====");
-        System.out.println("1. Login\n2. Register\n3. Exit");
+        System.out.println("1. Login\n2. Register\n3. Delete user\n4. Exit");
         System.out.print("Selection: ");
         choice = scanner.nextInt();
         return choice;

@@ -107,4 +107,6 @@ public class User implements Authentication {
         this.id = rs.getInt("id");
         return this.id;
     }
+
+
 }
