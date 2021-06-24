@@ -1,5 +1,7 @@
+<div>
 <img alt="CircleCI" src="https://img.shields.io/circleci/build/github/jerrylasama/perpustakaanku/main?token=7ec0ded0d34af77c35df84c5a6a03fd751940f0c">
-
+<img alt="Java" src="https://img.shields.io/badge/java-%23ED8B00.svg?style=flat&logo=java&logoColor=white"/>
+</div>
 
 # Perpustakaanku
 A Library in A Terminal
